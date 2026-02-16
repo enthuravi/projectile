@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <title>Projectile motion physics</title>
+  <meta name='viewport' content='width:device-width; initial-scale:1;'>
+  <meta charset='utf-16'>
+</head>
+<body>
+  <canvas width="1030" height="500"></canvas>
+  <div class='controls'>
+    <div class="slider">
+      <span id='ang_val' class='out'></span>
+      <input type="range" max="90" min="0" value="10" oninput="myfunction()" style="--name:'Angle';">
+      <span>Angle</span>
+    </div>
+    <div class="slider">
+      <span id='vel_val' class='out'></span>
+      <input type="range" max="100" min="0" value="10" oninput="myfunction()" style="--name:'Velocity';">
+      <span>Velocity</span>
+    </div>
+  </div>
+  <button onclick="play()">Throw</button>
+<script src='script.js'></script>
+</body>
+</html>
